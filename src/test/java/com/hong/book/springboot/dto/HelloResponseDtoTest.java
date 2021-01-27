@@ -17,6 +17,8 @@ public class HelloResponseDtoTest {
         HelloResponseDto dto = new HelloResponseDto(name, amount);
 
         // then
+        // aseertj => 테스트 검증 라이브러리의 검증 메소드
+        // 메소드 체이닝이 지원되어 isEqualTo와 같이 사용 가능
         assertThat(dto.getName()).isEqualTo(name);
         assertThat(dto.getAmount()).isEqualTo(amount);
 
